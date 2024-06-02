@@ -1,0 +1,4 @@
+./List1.exe :   List1.o
+    gcc List1.o -o List1.exe
+List1.o :   List1.c
+    gcc -c List1.c
