@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+class Base
+{
+    int x;
+    protected:
+    int y;
+    public:
+    int z;
+    void Disp()
+    {
+        cout<<x<<", "<<y<<", "<<z<<"\n";
+        //cout<<y<<z;
+        cout<<"\nBase Called\n";
+    }
+    Base()
+    {
+        x=0;y=0;z=0;
+    }
+    
+}; 
+//class PrivateDerived : private Base
+class PrivateDerived : Base
+{
+    // x=1;y=2;z=3;
+       //y=2;z=3;
+    // cout<<"PrivateDerived Called\n";
+    public:
+    void Disp()
+    {
+       // cout<<x<<y<<z;
+        //cout<<y<<z;
+        cout<<"\nPrivateDerived Called\n";
+    }
+};
+int main()
+{
+    Base objB;
+    objB.Disp();
+    // cout<<x<<y<<z;
+    PrivateDerived objPr;
+    objPr.Disp();
+    return 0; 
+}

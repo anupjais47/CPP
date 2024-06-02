@@ -1,0 +1,14 @@
+#include<iostream>
+#include<unistd.h>
+using namespace std;
+int main()
+{
+	//for(int a=0; a<2; a++)
+	for(int a=1; a<3; a++)
+	{
+		fork();
+		//printf("Anup\n");
+		cout<<"Anup"<<endl;
+	}
+	return 0;
+}
