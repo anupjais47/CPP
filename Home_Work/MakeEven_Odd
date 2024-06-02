@@ -1,0 +1,4 @@
+./Even_Odd.exe : Even_Odd.o
+	g++ Even_Odd.o -o Even_Odd.exe
+Even_Odd.o : Even_Odd.cc
+	g++ -c Even_Odd.cc

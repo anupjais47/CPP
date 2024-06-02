@@ -1,0 +1,4 @@
+./Max_in_Four.exe : Max_in_Four.o
+	g++ Max_in_Four.o -o Max_in_Four.exe
+Max_in_Four.o : Max_in_Four.cc
+	g++ -c Max_in_Four.cc

@@ -1,0 +1,5 @@
+./Hello.exe : Hello.o
+	g++ Hello.o -o Hello.exe
+Hello.o : Hello.c++
+	g++ -c Hello.c++
+

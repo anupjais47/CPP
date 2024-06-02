@@ -1,0 +1,5 @@
+./Hello.pdf : Hello.o
+	g++ Hello.o -o Hello.pdf
+Hello.o : Hello.c++
+	g++ -c Hello.c++
+

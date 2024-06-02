@@ -1,0 +1,7 @@
+./TestClassConst : TestClassConst.o
+        g++ TestClassConst.o -o TestClassConst
+TestClassConst.o : TestClassConst.cpp
+        g++ -c TestClassConst.cpp
+
+
+

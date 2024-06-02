@@ -1,0 +1,4 @@
+./Average_Age.exe : Average_Age.o
+	g++ Average_Age.o -o Average_Age.exe
+Average_Age.o : Average_Age.cc
+	g++ -c Average_Age.cc

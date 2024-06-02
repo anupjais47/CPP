@@ -1,0 +1,4 @@
+./Acpt_N_in_Arr_and_Print_ev_od.exe : Acpt_N_in_Arr_and_Print_ev_od.o
+	g++ Acpt_N_in_Arr_and_Print_ev_od.o -o Acpt_N_in_Arr_and_Print_ev_od.exe
+Acpt_N_in_Arr_and_Print_ev_od.o : Acpt_N_in_Arr_and_Print_ev_od.cc
+	g++ -c Acpt_N_in_Arr_and_Print_ev_od.cc

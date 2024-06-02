@@ -1,0 +1,4 @@
+./ArrayClass.exe        :      ArrayClass.o
+        g++ ArrayClass.o -o ArrayClass.exe
+ArrayClass.o    :  ArrayClass.c++
+        g++ -c ArrayClass.c++
